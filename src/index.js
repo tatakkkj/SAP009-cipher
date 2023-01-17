@@ -1,3 +1,9 @@
-import cipher from './cipher.js';
+{
 
-console.log(cipher);
+    const bot = document.getElementById("btnAcesso")
+
+    botao.addEventListener("click")
+    
+
+}
+
