@@ -1,13 +1,26 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+// Botao Criptografar
+const codificar = document.querySelector("#codificar");
+function criptografar() {
+  const textoOriginal = document.querySelector("#original").value.toLocaleUpperCase();
+  const offset = document.querySelector("#offset");
+  const deslocamento = Number(offset.value);
+  const textoCodificado = cipher.encode(textoOriginal, deslocamento);
+  document.querySelector("#cifrada").innerText = textoCodificado;    
 
-/*Cifra de Cesar
+  //document.querySelector("#textoOriginal").value = textoCodificado;
+}
+codificar.addEventListener("click", criptografar);
 
-A  B  C  D  E  F  G  H  I  J  K  L  M 
-1  2  3  4  5  6  7  8  9 10 11 12 13 
+// Botao Descriptografar
+const descodificar = document.querySelector("#descodificar");
+function descriptografar() {
+  const cifrada = document.querySelector("#cifrada").value.toLocaleUpperCase();
+  const offset = document.querySelector("#offset");
+  const deslocamento2 = Number(offset.value);
+  const textoDecodificado = cipher.decode(cifrada, deslocamento2);
+  document.querySelector("#textoOriginal").value = textoDecodificado;
+}
+descodificar.addEventListener("click", descriptografar);
 
-N   O   P   Q   R  S  T  U  V  W   X  Y  Z
-13 14  15  16  17  18 19 20 21 22 23 24 25
-
-*/

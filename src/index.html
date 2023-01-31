@@ -19,13 +19,13 @@
     
         </div>
         <div>
-          <input type="button" class="botao" value="Criptografar" id="criptografar">
-          <input type="button" class="botao" value="Descriptografar" id="descriptografar">
+          <input type="button" onClick="botaoHandler()" class="botao" value="Criptografar" id="criptografar">
+          <input type="button" onClick="botaoHandler()" class="botao" value="Descriptografar" id="descriptografar">
         </div>
         <div class="res">
           <textarea id="cifrada" name="cifrada" rows="10" cols="90" placeholder="Sua mensagem descriptografada..."></textarea>
 <div>Insira aqui o descolamento da mensagem:
-          <input type="number" min= "1" max="5">   
+          <input type="number" min= "1" max="99" id="offset">   
         </div>
       </section>
     </div>
