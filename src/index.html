@@ -1,57 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    Diário de Classe
-    <meta charset="utf-8">
-    <meta name="viewport" contet="width=device-width">
-    <title>Diário de Classe</title>
-    
-    <link href="style.css" rel="stylesheet" type=""text/css"
-  <form>
-    <h3>Login</h3>
-    <input type=""text" placeholder="Login"    id="Login">
-    <input type="password" placeholder="Senha" id="Senha"
-    <input type="submit">
+<html lang="pt-br">
+<head>
 
-    
-  </form>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cifra de César</title>
+</head>
+<body>
+ <header>
   
-  </head>
-  <body>
+<h1>PROTEJA SEU ARQUIVO!</h1>
 
+<img scr="cadeado.jpg" width="100%" height="230px">
 
-    <div id="root">
-      <h1>
-      <div>Acesso Restrito</div> </h1>
+</header>
+
+  <br> Para armazenamento com segurança, codifique seu documento! </br>
+
+  <section>
+    <div id="dados">
+      <textarea id="original" name="original" rows="10" cols="90"
+        placeholder="Escreva aqui a mensagem que deseja criptografar ..."></textarea>
+
     </div>
-<style>
-*{
-   box-sizing: border-box;
-
-}
-
-form
-body {background-color: rgb(233, 220, 247);}
-
-h1 {color: rgb(10, 10, 10);}
-
-<script>
-  function funcao1()
-
-  {
-    alert("Acesso Restrito!!");
-  }
-
-  </script>
-
-  <input type="button" onclick="funcao1()" value="Exibir Alert"/>
-
-</style>
-
-  <a href="index2.html">Acessar</a>
+    <div>
+      <input type="button" class="botao" value="Criptografar" id="criptografar">
+      <input type="button" class="botao" value="Descriptografar" id="descriptografar">
+    </div>
+    <div class="res">
+      <textarea id="cifrada" name="cifrada" rows="10" cols="90" placeholder="Sua mensagem criptografada ...."></textarea>
+    </div>
+  </section>
 
 
-  </body>
-
+</body>
 </html>
 
+
+
+<b>Feito por Tamires Almeida ©</b>

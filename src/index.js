@@ -1,9 +1,25 @@
-{
+import cipher from "./cipher";
 
-    const bot = document.getElementById("btnAcesso")
+const cifraDeCesarCriptografar = (frase, deslocamento) {
 
-    botao.addEventListener("click")
-    
+    const tamanhoFrase = frase.length;
+    const alfabeto = _alfabeto();
+let frasePront = "";
+
+function cifraDeCesarCriptografar ()
+
+function cifraDeCesarDescriptografar ()
+
+};
+
+const cifraDeCesarDescriptografar = (palavra, minhaChave) {};
+
+const _alfabeto =() {
+
+    var alfabeto = new Map ();
+
+
+
+
 
 }
-
