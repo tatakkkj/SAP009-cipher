@@ -1,26 +1,16 @@
 import cipher from './cipher.js';
 
-// Botao Criptografar
-const codificar = document.querySelector("#codificar");
+const button = document.querySelector("#criptografar");
+button.addEventListener("click", criptografar);
+
 function criptografar() {
-  const textoOriginal = document.querySelector("#original").value.toLocaleUpperCase();
-  const offset = document.querySelector("#offset");
-  const deslocamento = Number(offset.value);
-  const textoCodificado = cipher.encode(textoOriginal, deslocamento);
-  document.querySelector("#cifrada").innerText = textoCodificado;    
-
-  //document.querySelector("#textoOriginal").value = textoCodificado;
+  
+  // const textarea1 = document.querySelector("textarea1").innerHTML
 }
-codificar.addEventListener("click", criptografar);
 
-// Botao Descriptografar
-const descodificar = document.querySelector("#descodificar");
+const button2 = document.querySelector("#descriptografar");
+button2.addEventListener("click", descriptografar);
+
 function descriptografar() {
-  const cifrada = document.querySelector("#cifrada").value.toLocaleUpperCase();
-  const offset = document.querySelector("#offset");
-  const deslocamento2 = Number(offset.value);
-  const textoDecodificado = cipher.decode(cifrada, deslocamento2);
-  document.querySelector("#textoOriginal").value = textoDecodificado;
-}
-descodificar.addEventListener("click", descriptografar);
 
+}

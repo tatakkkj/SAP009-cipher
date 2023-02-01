@@ -5,7 +5,7 @@ const cipher = {
   encode: function encode(offset, string) {
     if (typeof offset === null || typeof string === string) {
       throw new TypeError("Erro");
-      // alert("Escolha um descolamento de 1 a 99!");
+      // alert("Escolha um descolamento de 1 a 10!");
     } else {
       let resultadoCifra = "";
       for (let i = 0; i < string.length; i++) {
