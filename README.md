@@ -27,8 +27,8 @@ São características que ainda não foram tratadas, mas funcionarão em atualiz
 1. No navegador web, abra a plataforma;
 2. No primeiro campo insira a mensagem que deseja criptografar;
 3. No segundo campo escolha o deslocamento desejado (de 1 a 33);
-4. Clique no botão "Criptografar" . A frase aparecera na caixa abaixo criptografada;
-5. Para descriptografar copie a mensagem criptografa na caixa de cima e clique no botão descriptografar. A mensagem aparecerá descroiptografada;
+4. Clique no botão "Criptografar" . A frase aparecera criptografa na mesma  caixa;
+5. Em seguida clique em descriptografar, a mensagem aparecerá descriptografada na caixa abaixo.
 
 ## Ferramentas utilizadas:
 
