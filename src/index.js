@@ -1,6 +1,5 @@
 import cipher from './cipher.js';
 
-
 const caixaTexto1 = document.querySelector("#caixaTexto1");
 const caixaTexto2 = document.querySelector("#caixaTexto2");
 const deslocamento = document.querySelector("#deslocamento");
@@ -9,14 +8,14 @@ const btnDescriptografar = document.querySelector("#btnDescriptografar");
 
 // Botao Criptografar
 btnCriptografar.addEventListener("click", function () {
-  const mensagem = caixaTexto1.value;
   const offset = parseInt(deslocamento.value);
-  caixaTexto2.value = cipher.encode(mensagem, offset);
+  const mensagem = caixaTexto1.value;
+  caixaTexto2.value = cipher.encode(offset, mensagem);
 })
 
 // Botao Descriptografar
 btnDescriptografar.addEventListener("click", function () {
-  const mensagem = caixaTexto1.value;
   const offset = parseInt(deslocamento.value);
-  caixaTexto1.value = cipher.decode(mensagem, offset);
+  const mensagem = caixaTexto1.value;
+  caixaTexto1.value = cipher.decode(offset, mensagem);
 })

@@ -1,5 +1,9 @@
 const cipher = {
-  encode: function (caixaTexto1, deslocamento){
+  encode: function (deslocamento, caixaTexto1){
+    if (typeof caixaTexto1 !== "string" || caixaTexto1 === "" || deslocamento === "" || caixaTexto1 === 0 || deslocamento === 0) {
+      throw new TypeError;
+    }
+
     let resultado = ""
     for(let i = 0 ; i < caixaTexto1.length ; i++){
       const formula = ((caixaTexto1.charCodeAt(i) - 65 + deslocamento) % 26) + 65;
@@ -8,7 +12,10 @@ const cipher = {
     return resultado
   },
 
-  decode: function(caixaTexto1, deslocamento) {
+  decode: function(deslocamento, caixaTexto1) {
+    if (typeof caixaTexto1 !== "string" || caixaTexto1 === "" || deslocamento === "" || caixaTexto1 === 0 || deslocamento === 0) {
+      throw new TypeError;
+    }
     let resultado = ""
     for(let i = 0 ; i <caixaTexto1.length ; i++) {
       const formula = ((caixaTexto1.charCodeAt(i) - 65 - deslocamento) % 26) + 65;
