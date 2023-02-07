@@ -10,12 +10,12 @@ const btnDescriptografar = document.querySelector("#btnDescriptografar");
 btnCriptografar.addEventListener("click", function () {
   const offset = parseInt(deslocamento.value);
   const mensagem = caixaTexto1.value;
-  caixaTexto2.value = cipher.encode(offset, mensagem);
+  caixaTexto1.value = cipher.encode(offset, mensagem);
 })
 
 // Botao Descriptografar
 btnDescriptografar.addEventListener("click", function () {
   const offset = parseInt(deslocamento.value);
   const mensagem = caixaTexto1.value;
-  caixaTexto1.value = cipher.decode(offset, mensagem);
+  caixaTexto2.value = cipher.decode(offset, mensagem);
 })
