@@ -34,6 +34,7 @@ São características que ainda não foram tratadas, mas funcionarão em atualiz
 
 -  HTML; 
 - CSS;
+- Javascript;
 - Visual Studio Code;
 - Git e Gitbub. 
 
